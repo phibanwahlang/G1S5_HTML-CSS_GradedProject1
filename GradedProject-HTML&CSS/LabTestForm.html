@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href=".\CSS File\LabTestForm.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="sub-container">
+
+            <!-- div for form -->
+            <div class="form">
+
+                <form id="lab_form" action="message.html" method="post">
+
+                    <!--div for contact details-->
+                    <div id="contact">
+                        <h2>1. Your contact Details</h2>
+                        <input class="contact" type="text" name="Full Name" placeholder="Full Name" required />
+                        <input class="contact" type="number" name="Id" placeholder="Patient id if exist" required />
+                        <input class="contact" type="number" name="Contact Number" placeholder="Contact Number"
+                            min="6000000000" max="9999999999" required />
+                        <input class="contact" type="email" name="email" placeholder="Email id" required />
+                    </div>
+
+                    <!--div for Address-->
+                    <div id="address">
+                        <h2>2 . Address</h2>
+                        <input class="address" type="number" name="House number" placeholder="H-No" required />
+                        <input class="address" type="text" name="Street" placeholder="Street" required />
+                        <input class="address" type="text" name="Area" placeholder="Area" required />
+
+                        <h4>District</h4>
+
+                        <select class="district" name="District" placeholder="District" required>
+                            <option selected>Choose</option>
+                            <option value="East Khasi Hills">East Khasi Hills</option>
+                            <option value="West Khasi Hills">West Khasi Hills</option>
+                            <option value="West Khasi Hills">West Khasi Hills</option>
+                            <option value="West Garo Hills">West Garo Hills</option>
+                            <option value="South Garo Hills">South Garo Hills</option>
+                            <option value="Ri bhoi">Ri bhoi</option>
+                            <option value="South West Garo Hills">South West Garo Hills</option>
+                            <option value="East Jaintia Hills">East Jaintia Hills</option>
+                            <option value="South West Khasi Hills">South West Khasi Hills</option>
+                            <option value="North Garo Hills">North Garo Hills</option>
+                            <option value="West Jaintia Hills">West Jaintia Hills</option>
+                        </select>
+                    </div>
+
+                    <!--div for checkbox-->
+                    <div class="Test-Type">
+                        <h2>3. Choose the Test Type</h2>
+                        <p>Check atleast one box without fail</p>
+                        <div id="Test-Type">
+                            <label><input type="checkbox" name="Test-Type" value="CBC">CBC</label><br>
+                            <label><input type="checkbox" name="Test-Type" value="Complete Urine" />Complete
+                                Urine</label><br>
+                            <label><input type="checkbox" name="Test-Type" value="Lipid Profile" />Lipid
+                                Profile</label><br>
+                            <label><input type="checkbox" name="Test-Type"
+                                    value="Thyroid Stimulating Hormone(TSH)" />Thyroid Stimulating
+                                Hormone(TSH)</label><br>
+                            <label><input type="checkbox" name="Test-Type" value="Glucose Test" />Glucose
+                                Test</label><br>
+                        </div>
+                    </div>
+
+                    <!--div for report-->
+                    <div id="report">
+                        <h2>4. Do you want a hard copy of the report also ?</h2>
+                        <label><input type="radio" name="Report-Hard-Copy" value="Yes" />Yes</label>
+                        <label><input type="radio" name="Report-Hard-Copy" value="No" />No</label>
+                    </div>
+
+                    <!--div for date-->
+                    <div id="date-time">
+                        <h2>5. Select Your Comfortable Date and Time</h2>
+                        <label for="Date">Date</label>
+                        <input class="date" type="date" id="Date" name="Date" />
+                        <br><br>
+                        <label for="Time">Time</label>
+                        <input class="time" type="time" id="Time" name="Time" />
+                        <br>
+                    </div>
+                </form>
+            </div>
+
+            <!-- div for image -->
+            <div class="banner-img">
+                <picture>
+                    <img src=".\Images\Lab-Test\lab-test.jpg" alt="LabTest-Image">
+                </picture>
+            </div>
+
+        </div>
+
+        <!--div for buttons-->
+        <div class="button">
+            <input type="reset" value="Reset" form="lab_form" />
+            <input type="submit" value="Submit" form="lab_form" />
+        </div>
+
+    </div>
+
+</body>
+
+</html>

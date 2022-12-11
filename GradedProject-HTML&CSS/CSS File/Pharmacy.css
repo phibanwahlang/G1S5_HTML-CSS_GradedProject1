@@ -1,0 +1,208 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/*-------------------css for header and footer----------------------------*/
+
+
+header {
+    background-color: grey;
+    padding: 1%;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+footer {
+    position: relative;
+    background-color: black;
+    padding: 1%;
+    color: white;
+    text-align: center;
+}
+
+
+/*---------------------css for Nav tag contents----------------------------*/
+
+
+.menu {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+ul {
+    overflow: hidden;
+    background-color: lightgray;
+    margin: 0%;
+    list-style-type: none;
+    /*Bullet points*/
+}
+
+li {
+    display: inline;
+}
+
+a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    color: blue;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.submenu a:hover {
+    background-color: darkgray;
+}
+
+
+/*-------------------css for Animation--------------------------------*/
+
+
+#animation {
+
+    animation-name: animation;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    background-size: 100% 100%;
+    height: 300px;
+    border: 2px solid steelblue;
+}
+
+@keyframes animation {
+    0% {
+        background-image: url("../Images/Animation/ani1.jpg");
+    }
+
+    25% {
+        background-image: url("../Images/Animation/ani2.png");
+    }
+
+    50% {
+        background-image: url("../Images/Animation/ani3.jpg");
+    }
+
+    75% {
+        background-image: url("../Images/Animation/ani4.jpg");
+    }
+
+    100% {
+        background-image: url("../Images/Animation/ani5.jpg");
+    }
+}
+
+
+/*------------------css for the products display---------------------------------*/
+
+
+.Care_sections {
+    border: 5px solid black;
+}
+
+h2 {
+    font-weight: bold;
+    margin-left: 9%;
+}
+
+.all_products {
+    text-align: center;
+    position: relative;
+    top: 1%;
+}
+
+.product {
+    background-color: whitesmoke;
+    position: relative;
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid lightblue;
+    display: inline-block;
+    box-shadow: 4px 4px lightslategray;
+}
+
+.product:hover {
+    width: 320px;
+    height: 320px;
+    box-shadow: 4px 4px lightgray;
+}
+
+.product img {
+    width: 100%;
+    height: 170px;
+}
+
+.product .price {
+    margin: 0;
+    padding: 1%;
+}
+
+.add-to-cart-button {
+    width: 95%;
+    margin-left: 3%;
+    text-align: center;
+
+}
+
+button {
+    width: 100%;
+    color: orange;
+    font-size: 15px;
+    font-weight: bold;
+    border-color: lightblue;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.price {
+    color: rgb(22, 22, 230);
+    text-align: left;
+}
+
+
+
+/*---------------------------------------------------------------------------*/
